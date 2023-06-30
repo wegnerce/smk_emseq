@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 27 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/qc.smk:
+Missing input files for rule bbduk_trim:
+data/Nd.2_R1.fastq.gz
+data/Nd.2_R2.fastq.gz

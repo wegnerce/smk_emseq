@@ -1,0 +1,6 @@
+channels:
+  - bioconda
+dependencies:
+  - bismark
+  - bowtie2
+  - samtools

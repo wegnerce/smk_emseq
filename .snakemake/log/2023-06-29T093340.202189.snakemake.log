@@ -1,0 +1,3 @@
+SyntaxError in line 73 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk:
+Unexpected keyword mem_mb in rule definition (bismark.smk, line 73)
+  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile", line 83, in <module>

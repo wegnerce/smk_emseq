@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 82 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk:
+Missing input files for rule bismark2bedGraph:
+results/03_METHYL_EX/CHH_Nd.1_mapped_AL1_trim_bismark_pe.dedup.sorted.txt.gz

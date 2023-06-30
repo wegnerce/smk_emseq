@@ -1,0 +1,76 @@
+###############################################################################
+# @author:      Carl-Eric Wegner
+# @affiliation: Küsel Lab - Aquatic Geomicrobiology
+#              Friedrich Schiller University of Jena
+#
+#              carl-eric.wegner@uni-jena.de
+#              https://github.com/wegnerce
+#              https://www.exploringmicrobes.science
+###############################################################################
+
+###############################################################################
+# needed packages
+###############################################################################
+import pandas as pd
+import os
+
+###############################################################################
+# link to config file
+###############################################################################
+configfile: "config/config.yaml"
+
+###############################################################################
+# needed resources for mapping
+###############################################################################
+REF_GENOME_DIR = config["MAPPING"]["ref_genome_dir"]
+REF_SHORT      = config["MAPPING"]["ref_short"]
+ADAPTER        = config["adapter-file"]
+
+###############################################################################
+# relevant parameters input files
+###############################################################################
+r1_suffix = config["Fastq"]["suffix_R1"]
+r2_suffix = config["Fastq"]["suffix_R2"]
+PAIRS = [r1_suffix, r2_suffix]
+
+###############################################################################
+# extra parameters
+###############################################################################
+EXTRA_PARAMS_METH_EX = config["METHYLATION_EXTRACTION"]["extra_params"]
+CONTEXT = ["CpG","CHG","CHH"]
+
+###############################################################################
+# read sample names from samples.tsv
+###############################################################################
+SAMPLES = pd.read_table(config["sample-file"], header=0, sep="\t", index_col=0)
+raw_data_dir = config["rawdata-dir"]
+
+###############################################################################
+rule all:
+	input:
+		# .bedGraph and .cov.gz files based on extracted methylations
+		expand("results/04_COVERAGE/{sample}_mapped_" + REF_SHORT + "_{context}.bedGraph.gz", sample=SAMPLES.index, context=CONTEXT),
+		# extracting methylation calls for all three contexts
+		expand("results/03_METHYL_EX/CHG_context_{sample}_mapped_" + REF_SHORT + "_trim_bismark_pe.dedup.sorted.txt.gz", sample=SAMPLES.index),
+		expand("results/03_METHYL_EX/CpG_context_{sample}_mapped_" + REF_SHORT + "_trim_bismark_pe.dedup.sorted.txt.gz", sample=SAMPLES.index),
+		expand("results/03_METHYL_EX/CHH_context_{sample}_mapped_" + REF_SHORT + "_trim_bismark_pe.dedup.sorted.txt.gz", sample=SAMPLES.index),
+        # sorting + indexing (samtools)
+		expand("results/02_MAPPED/{sample}_mapped_" + REF_SHORT + "_trim_bismark_pe.dedup.sorted.bam.bai", sample=SAMPLES.index),
+        # deduplication of the alignments (bismark)
+		expand("results/02_MAPPED/{sample}_mapped_" + REF_SHORT + "_trim_bismark_pe.deduplicated.bam", sample=SAMPLES.index),
+        # alignment/mapping (bismark)
+		expand("results/02_MAPPED/{sample}_mapped_" + REF_SHORT + "_trim_bismark_pe.bam", sample=SAMPLES.index),
+        # genome preparation (bismark)
+		"resources/genomic_nucleotide_frequencies.txt",
+        # adapter removal and trimming (bbduk)
+		expand("results/01_TRIMMED/{sample}_trimmed_{pair}.fastq.gz",  sample=SAMPLES.index, pair = PAIRS),
+        # QC before and after adapter removal and trimming
+		expand("logs/fastqc/raw/{sample}_{pair}_fastqc.html", sample=SAMPLES.index, pair = PAIRS),
+        expand("logs/fastqc/trimmed/{sample}_trimmed_{pair}_fastqc.html", sample=SAMPLES.index, pair = PAIRS),
+
+###############################################################################
+# needed rules
+###############################################################################
+include: "rules/qc.smk"
+include: "rules/bismark.smk"
+include: "rules/sort.smk"

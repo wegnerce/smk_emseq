@@ -1,0 +1,3 @@
+WildcardError in line 58 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile:
+No values given for wildcard 'sample'.
+  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile", line 58, in <module>

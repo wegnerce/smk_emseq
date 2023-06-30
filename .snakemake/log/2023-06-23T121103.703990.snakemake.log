@@ -1,0 +1,4 @@
+NameError in line 13 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk:
+name 'params' is not defined
+  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile", line 63, in <module>
+  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk", line 13, in <module>

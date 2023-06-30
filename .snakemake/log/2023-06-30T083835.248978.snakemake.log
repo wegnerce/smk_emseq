@@ -1,0 +1,224 @@
+Lints for snakefile /home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile:
+    * Absolute path "/bin/bash" in line 51:
+      Do not define absolute paths inside of the workflow, since this renders your workflow
+      irreproducible on other machines. Use path relative to the working directory instead, or make
+      the path configurable via a config file.
+      Also see:
+      https://snakemake.readthedocs.io/en/latest/snakefiles/configuration.html#configuration
+    * Path composition with '+' in line 58:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 60:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 61:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 62:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 64:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 66:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 68:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 20:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 58:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 60:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 61:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 62:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 64:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 66:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+
+Lints for snakefile /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/qc.smk:
+    * Absolute path "/{sample}_{pair}.fastq.gz" in line 14:
+      Do not define absolute paths inside of the workflow, since this renders your workflow
+      irreproducible on other machines. Use path relative to the working directory instead, or make
+      the path configurable via a config file.
+      Also see:
+      https://snakemake.readthedocs.io/en/latest/snakefiles/configuration.html#configuration
+    * Absolute path "/{sample}_" in line 30:
+      Do not define absolute paths inside of the workflow, since this renders your workflow
+      irreproducible on other machines. Use path relative to the working directory instead, or make
+      the path configurable via a config file.
+      Also see:
+      https://snakemake.readthedocs.io/en/latest/snakefiles/configuration.html#configuration
+    * Absolute path "/{sample}_" in line 31:
+      Do not define absolute paths inside of the workflow, since this renders your workflow
+      irreproducible on other machines. Use path relative to the working directory instead, or make
+      the path configurable via a config file.
+      Also see:
+      https://snakemake.readthedocs.io/en/latest/snakefiles/configuration.html#configuration
+    * Path composition with '+' in line 14:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 30:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 14:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 30:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 31:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 33:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+
+Lints for snakefile /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk:
+    * Path composition with '+' in line 26:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+    * Path composition with '+' in line 27:
+      This becomes quickly unreadable. Usually, it is better to endure some redundancy against having
+      a more readable workflow. Hence, just repeat common prefixes. If path composition is
+      unavoidable, use pathlib or (python >= 3.6) string formatting with f"...".
+      Also see:
+
+
+Lints for rule fastqc_raw (line 11, /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/qc.smk):
+    * No log directive defined:
+      Without a log directive, all output will be printed to the terminal. In distributed
+      environments, this means that errors are harder to discover. In local environments, output of
+      concurrent jobs will be mixed and become unreadable.
+      Also see:
+      https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#log-files
+
+Lints for rule bbduk_trim (line 51, /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/qc.smk):
+    * No log directive defined:
+      Without a log directive, all output will be printed to the terminal. In distributed
+      environments, this means that errors are harder to discover. In local environments, output of
+      concurrent jobs will be mixed and become unreadable.
+      Also see:
+      https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#log-files
+
+Lints for rule fastqc_trim (line 98, /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/qc.smk):
+    * No log directive defined:
+      Without a log directive, all output will be printed to the terminal. In distributed
+      environments, this means that errors are harder to discover. In local environments, output of
+      concurrent jobs will be mixed and become unreadable.
+      Also see:
+      https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#log-files
+
+Lints for rule bismark_genome_prep (line 11, /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk):
+    * No log directive defined:
+      Without a log directive, all output will be printed to the terminal. In distributed
+      environments, this means that errors are harder to discover. In local environments, output of
+      concurrent jobs will be mixed and become unreadable.
+      Also see:
+      https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#log-files
+
+Lints for rule bismark (line 41, /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk):
+    * Shell command directly uses variable REF_GENOME_DIR from outside of the rule:
+      It is recommended to pass all files as input and output, and non-file parameters via the params
+      directive. Otherwise, provenance tracking is less accurate.
+      Also see:
+      https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#non-file-parameters-for-rules
+    * Shell command directly uses variable REF_SHORT from outside of the rule:
+      It is recommended to pass all files as input and output, and non-file parameters via the params
+      directive. Otherwise, provenance tracking is less accurate.
+      Also see:
+      https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#non-file-parameters-for-rules
+    * Shell command directly uses variable REF_SHORT from outside of the rule:
+      It is recommended to pass all files as input and output, and non-file parameters via the params
+      directive. Otherwise, provenance tracking is less accurate.
+      Also see:
+      https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#non-file-parameters-for-rules
+    * Shell command directly uses variable REF_SHORT from outside of the rule:
+      It is recommended to pass all files as input and output, and non-file parameters via the params
+      directive. Otherwise, provenance tracking is less accurate.
+      Also see:
+      https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#non-file-parameters-for-rules
+
+Lints for rule sort_individual (line 11, /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/sort.smk):
+    * No log directive defined:
+      Without a log directive, all output will be printed to the terminal. In distributed
+      environments, this means that errors are harder to discover. In local environments, output of
+      concurrent jobs will be mixed and become unreadable.
+      Also see:
+      https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#log-files
+

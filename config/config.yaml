@@ -1,0 +1,18 @@
+rawdata-dir: data
+sample-file: config/samples.tsv
+# adapter.fa needed by bbduk during QC and trimming
+adapter-file: resources/adapters.fa
+  
+MAPPING:
+  # reference genome
+  ref_genome_dir: resources/
+  # short name for naming output files from mapping
+  ref_short: "AL1"
+
+METHYLATION_EXTRACTION:
+  # additional parameters
+  extra_params:  " --comprehensive --no-header --report --buffer_size 8G"
+ 
+Fastq:
+  suffix_R1: R1
+  suffix_R2: R2
