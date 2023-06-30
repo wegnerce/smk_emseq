@@ -18,7 +18,7 @@ A reference genome stored in `resources/` is bisulfite-treated _in silico_ with 
 
 Read pairs are subsequently mapped onto the bisulfite-treated genome, alignments with identical mapping positions are removed. Methylations are extracted for all three contexts (CpG, CHH, CHX) and used to generate a `.bedGraph` and coverage file. The latter can be used for downstream methylation analysis.
 
-The below DAG graph outlines the different processes of the workflow, exemplarily for two file pairs La.1* and Nd.1*.
+The below DAG graph outlines the different processes of the workflow.
 
 ![DAG of smk_emseq.](dag.svg)
 
