@@ -1,3 +1,0 @@
-SyntaxError in line 80 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk:
-Expecting rule keyword, comment or docstrings inside a rule definition. (bismark.smk, line 80)
-  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile", line 83, in <module>

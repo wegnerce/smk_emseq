@@ -1,3 +1,0 @@
-KeyError in line 26 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile:
-'reference_short'
-  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile", line 26, in <module>

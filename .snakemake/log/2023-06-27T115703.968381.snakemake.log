@@ -1,2 +1,0 @@
-SyntaxError in line 52 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile:
-Unexpected keyword expand in rule definition (Snakefile, line 52)

@@ -1,7 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 49 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile:
-Missing input files for rule all:
-results/02_MAPPED/Nd.1_mapped_AL1_trim_bismark_pe.dedup.sorted.bam.bai
-results/02_MAPPED/La.1_mapped_AL1_trim_bismark_pe.dedup.sorted.bam
-results/02_MAPPED/Nd.1_mapped_AL1_trim_bismark_pe.dedup.sorted.bam
-results/02_MAPPED/La.1_mapped_AL1_trim_bismark_pe.dedup.sorted.bam.bai

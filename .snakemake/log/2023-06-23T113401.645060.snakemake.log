@@ -1,3 +1,0 @@
-KeyError in line 25 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile:
-'ref_genome'
-  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile", line 25, in <module>

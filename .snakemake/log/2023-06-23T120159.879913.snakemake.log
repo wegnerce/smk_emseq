@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 49 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile:
-Missing input files for rule all:
-resources/Bisulfite_Genome/genomic_nucleotide_frequencies.txt

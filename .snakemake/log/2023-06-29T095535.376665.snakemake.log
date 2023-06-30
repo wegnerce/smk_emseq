@@ -1,3 +1,0 @@
-SyntaxError in line 52 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk:
-Unexpected keyword bam in rule definition (bismark.smk, line 52)
-  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile", line 83, in <module>

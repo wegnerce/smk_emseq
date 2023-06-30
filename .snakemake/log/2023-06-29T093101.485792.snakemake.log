@@ -1,3 +1,0 @@
-SyntaxError in line 74 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk:
-invalid syntax
-  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile", line 83, in <module>

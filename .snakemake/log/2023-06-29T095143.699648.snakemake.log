@@ -1,4 +1,0 @@
-IndentationError in line 99 of <tokenize>:
-unindent does not match any outer indentation level (<tokenize>, line 99)
-  File "/home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile", line 83, in <module>
-  File "/home/cewegner/mambaforge/envs/snakemake/lib/python3.9/tokenize.py", line 512, in _tokenize

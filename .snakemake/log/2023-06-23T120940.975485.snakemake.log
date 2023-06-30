@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 11 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/rules/bismark.smk:
-Missing input files for rule bismark_genome_prep:
-params.genome_dir

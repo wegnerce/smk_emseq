@@ -1,7 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 49 of /home/cewegner/Dropbox/smk/smk_emseq/workflow/Snakefile:
-Missing input files for rule all:
-results/01_TRIMMED/La.1_trimmed_R1.fastq
-results/01_TRIMMED/Nd.1_trimmed_R2.fastq
-results/01_TRIMMED/Nd.1_trimmed_R1.fastq
-results/01_TRIMMED/La.1_trimmed_R2.fastq
