@@ -1,5 +1,5 @@
 
-<a href="https://github.com/wegnerce/smk_emseq/releases/"><img src="https://img.shields.io/github/tag/wegnerce/smk_rnaseq?include_prereleases=&sort=semver&color=blue" alt="GitHub tag"></a>  <a href="#license"><img src="https://img.shields.io/badge/License-GPL3-blue" alt="License"></a> <a href="https://python.org" title="Go to Python homepage"><img src="https://img.shields.io/badge/Python-%3E=3.6-blue?logo=python&logoColor=white" alt="Made with Python"></a> <a href="https://snakemake.github.io"><img src="https://img.shields.io/badge/snakemake-≥6.1.0-brightgreen.svg" alt="SnakeMake">
+<a href="https://github.com/wegnerce/smk_emseq/releases/"><img src="https://img.shields.io/github/tag/wegnerce/smk_rnaseq?include_prereleases=&sort=semver&color=blue" alt="GitHub tag"></a>  <a href="#license"><img src="https://img.shields.io/badge/License-GPL3-blue" alt="License"></a> <a href="https://python.org" title="Go to Python homepage"><img src="https://img.shields.io/badge/Python-%3E=3.6-blue?logo=python&logoColor=white" alt="Made with Python"></a> <a href="https://zenodo.org/badge/latestdoi/660514400"><img src="https://zenodo.org/badge/660514400.svg" alt="DOI"></a> <a href="https://snakemake.github.io"><img src="https://img.shields.io/badge/snakemake-≥6.1.0-brightgreen.svg" alt="SnakeMake">
 # smk_emseq - A Snakemake-based workflow for EMseq data processing
 
 ## :exclamation: Needed/used software
@@ -72,5 +72,5 @@ Output from the different steps of the workflow are stored in `/results` and `/l
 
 The resulting `*.cov.gz` files (`results/04_coverage/*.cov.gz`) can be used for downstream methylation analysis.
 
-:copyright: Carl-Eric Wegner
+:copyright: Carl-Eric Wegner, 2023
 
