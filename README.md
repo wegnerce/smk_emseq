@@ -17,6 +17,8 @@ The separate installation of the tools is not necessary, they are installed 'on 
 [`Snakemake`](https://snakemake.github.io/) should be installed as outlined in its [documentation](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html) for instance using [`conda`](https://docs.conda.io/en/latest/miniconda.html)/[`mamba`](https://github.com/conda-forge/miniforge#mambaforge). It is recommended to create a dedicated `conda` environment for Snakemake.
 
 ## :blue_book: Description of the workflow
+The workflow can be equally used for the analysis of data derived from [NEB's EMseq approach]() as well as data derived from WGBS (whole-genome bisulfite sequencing). Working with environmental microbes, we made the experience that the usage of commonly available bisulfite treatment kits lead to a strong loss of DNA. As a result, we ended up giving EMseq a try. For details about the methodology have  a look at NEBs [EMseq paper](https://www.genome.org/cgi/doi/10.1101/gr.266551.120).
+
 A reference genome stored in `resources/` is bisulfite-treated _in silico_ with `bismark`. Paired-end sequencing data (`stored in data/`) is subjected to quality-control and adapter-trimming using `bbduk`. Quality reports are written using `fastQC` before and after trimming. 
 
 Read pairs are subsequently mapped onto the bisulfite-treated genome, alignments with identical mapping positions are removed. Methylations are extracted for all three contexts (CpG, CHH, CHX) and used to generate a `.bedGraph` and coverage file. The latter can be used for downstream methylation analysis.
