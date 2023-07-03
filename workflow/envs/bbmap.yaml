@@ -1,5 +1,5 @@
 channels:
   - bioconda
 dependencies:
-  - bbmap
-  - samtools
+  - bbmap=39.01
+  - samtools=1.6
