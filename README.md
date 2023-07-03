@@ -1,6 +1,9 @@
 
+
 <a href="https://github.com/wegnerce/smk_emseq/releases/"><img src="https://img.shields.io/github/tag/wegnerce/smk_rnaseq?include_prereleases=&sort=semver&color=blue" alt="GitHub tag"></a>  <a href="#license"><img src="https://img.shields.io/badge/License-GPL3-blue" alt="License"></a> <a href="https://python.org" title="Go to Python homepage"><img src="https://img.shields.io/badge/Python-%3E=3.6-blue?logo=python&logoColor=white" alt="Made with Python"></a> <a href="https://zenodo.org/badge/latestdoi/660514400"><img src="https://zenodo.org/badge/660514400.svg" alt="DOI"></a> <a href="https://snakemake.github.io"><img src="https://img.shields.io/badge/snakemake-≥6.1.0-brightgreen.svg" alt="SnakeMake">
 # smk_emseq - A Snakemake-based workflow for EMseq data processing
+## :pushpin: Acknowledgement/Disclaimer
+This workflow is heavily based on [`https://github.com/seb-mueller/snakemake-bisulfite`](https://github.com/seb-mueller/snakemake-bisulfite) by [`@seb-mueller`](https://github.com/seb-mueller). I basically just streamlined/tailored the workflow to my needs.
 
 ## :exclamation: Needed/used software
 The workflow is based on the following tools: 
